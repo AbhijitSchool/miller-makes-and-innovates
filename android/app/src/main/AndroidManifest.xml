@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.miller_makes_and_innovates">
+    package="com.auth0.miller_makes_and_innovates">
    <application
         android:label="miller_makes_and_innovates"
         android:name="${applicationName}"

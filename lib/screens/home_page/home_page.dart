@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Book Recommendations'),
-        actions: [],
+        actions: const [],
       ),
       body: const TextBoxTest(),
     );
