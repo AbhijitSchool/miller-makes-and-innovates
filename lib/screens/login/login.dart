@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miller_makes_and_innovates/widgets/appbar.dart';
 
 class Login extends StatelessWidget {
   final loginAction;
@@ -8,17 +9,14 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        ElevatedButton(
-          onPressed: () {
-            loginAction();
-          },
-          child: Text('Login'),
-        ),
-        Text(loginError ?? ''),
-      ],
+    return Scaffold(
+      appBar: UpperAppBar(),
+      body: ElevatedButton(
+        onPressed: () {
+          loginAction();
+        },
+        child: Text('Login'),
+      ),
     );
   }
 }
