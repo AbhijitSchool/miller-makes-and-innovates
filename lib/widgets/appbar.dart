@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:miller_makes_and_innovates/widgets/profile.dart';
+import 'login.dart';
 
 class UpperAppBar extends StatelessWidget with PreferredSizeWidget {
   const UpperAppBar({Key? key}) : super(key: key);
@@ -6,11 +8,11 @@ class UpperAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   PreferredSizeWidget build(BuildContext context) {
     return AppBar(
-      title: Text('Book Recommendations'),
+      title: const Text('Book Recommendations'),
       actions: [
         //TODO: Replace text with a hyperlink
         Text('Email me!'),
-        //TODO: Add weather the user is loged in or not
+        // TODO: Profile(logoutAction, name, picture)
       ],
     );
   }

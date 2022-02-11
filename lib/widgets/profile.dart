@@ -5,7 +5,8 @@ class Profile extends StatelessWidget {
   final String name;
   final String picture;
 
-  Profile(this.logoutAction, this.name, this.picture);
+  Profile(this.logoutAction, this.name, this.picture, {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
